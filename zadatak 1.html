@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            Border: grey solid 2px;
+        }
+        .gradovi {
+            list-style-type: upper-latin;
+        }
+        .rijeke {
+            list-style-type: lower-latin;
+        }
+        ::marker {
+            color:red;
+        }
+        h2::first-letter {
+            color:blue;
+            font-size:2em;
+        }
+        .linkovi li::before {
+            content:"\2023";
+            color:red;
+            font-size: 20px;
+        }
+        .linkovi {
+            list-style-type: none;
+        }
+        .tocan::after {
+            content:"\2713";
+            color:green;
+        }
+
+        
+        a:link {
+            color: red;
+            
+        }
+        a:visited {
+            color:magenta;
+        }
+        a:hover {
+            background-color:lightgreen;
+            color:yellow;
+        }
+        a:active {
+            background-color: yellow;
+            color:lightgreen;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Zadatak 1</h1>
+<section>
+    <h2>1 Koji je glavni grad Hrvatske?</h2>
+    <ol class="gradovi">
+        <li>Koprivnica</li>
+        <li>Osijek</li>
+        <li class="tocan">Zagreb</li>
+        <li>Rijeka</li>
+    </ol>
+</section>
+<hr style="border:red dotted 2px;" />
+<section>
+    <h2>2 Koja je rijeka koja protječe kroz Hrvatsku najduža?</h2>
+    <ol class="rijeke">
+        <li>Mura</li>
+        <li class="tocan">Sava</li>
+        <li>Drava</li>
+        <li>Dunav</li>
+    </ol>
+</section>
+<hr style="border:red dotted 2px;" />
+<section>
+    <h2>3 Pogledajte sljedeće video linkove</h2>
+    <ul class="linkovi">
+        <li><a href="www.youtube.com">Play bass guitar</a></li>
+        <li><a href="www.youtube.com">Stop eating sugar</a></li>
+        <li><a href="www.youtube.com">Treći</a></li>
+        <li><a href="www.youtube.com">Četvrti</a></li>
+        <li><a href="www.youtube.com">Peti</a></li>
+    </ul>
+</section>
+<hr style="border:red dotted 2px;" />
+
+</body>
+</html>
